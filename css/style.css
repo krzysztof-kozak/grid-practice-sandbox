@@ -1,0 +1,53 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-image: url(/img/sky-background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fafafa;
+}
+
+.main {
+  margin: 60px 1rem;
+}
+
+.navigation-bar {
+  min-height: 50px;
+  background-color: #bfb880;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  box-shadow: 0px 0px 4px 4px #b0989878;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 120px;
+  display: none;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: #630404;
+  font-size: 1.3rem;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+}
+
+.menu__link:hover {
+  color: white;
+  background-color: #000;
+  transition: color 2s ease, background-color 2s ease;
+}
