@@ -41,6 +41,7 @@ body {
 }
 .button:hover {
   color: #ff0707;
+  transition: color 0.5s ease;
   cursor: pointer;
 }
 
@@ -188,4 +189,24 @@ body {
   line-height: 1.5rem;
   padding: 0.6em;
   text-align: center;
+}
+
+.side-note__description {
+  font-family: "Cantarell", sans-serif;
+  padding: 2em;
+  line-height: 1.5em;
+  text-align: right;
+  color: #ffb600;
+}
+
+a.side-note__link {
+  text-decoration: none;
+  font-weight: 600;
+  color: #df1111;
+  letter-spacing: -1px;
+}
+
+a.side-note__link:hover {
+  color: #fff;
+  transition: color 2s ease;
 }
