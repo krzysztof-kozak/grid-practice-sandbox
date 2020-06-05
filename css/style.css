@@ -173,6 +173,8 @@ body {
   background-color: #f0ffff1a;
   border-radius: 2em;
   box-shadow: 1px 1px 4px 2px;
+  margin: 3em 0 4em;
+  padding: 0 0.8em 0.4em;
 }
 
 .article__title {
@@ -187,16 +189,22 @@ body {
 
 .article__description {
   line-height: 1.5rem;
-  padding: 0.6em;
   text-align: center;
 }
 
 .side-note__description {
   font-family: "Cantarell", sans-serif;
-  padding: 2em;
   line-height: 1.5em;
   text-align: right;
   color: #ffb600;
+}
+
+.side-note__description--padding {
+  padding-right: 1em;
+  text-align: center;
+  padding-left: 9px;
+  border-left: 3px solid #fff;
+  line-height: 2em;
 }
 
 a.side-note__link {
@@ -209,4 +217,17 @@ a.side-note__link {
 a.side-note__link:hover {
   color: #fff;
   transition: color 2s ease;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul.games {
+  flex-basis: 45%;
+}
+
+aside.side-note {
+  flex-basis: 40%;
 }
