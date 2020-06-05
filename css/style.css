@@ -14,6 +14,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   color: #fafafa;
+  font-family: "Roboto", sans-serif;
 }
 
 .button {
@@ -44,10 +45,10 @@ body {
 }
 
 .navigation-bar {
+  z-index: 1;
   min-height: 50px;
   background-color: #bfb880;
   background-image: linear-gradient(65deg, #bfb880 49%, #ba7c6b 73%);
-
   position: fixed;
   width: 100%;
   top: 0;
@@ -82,4 +83,109 @@ body {
 
 .main {
   margin: 60px 1rem;
+}
+
+.header__title {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  letter-spacing: -2px;
+  text-align: center;
+  line-height: 45px;
+  text-shadow: 4px -1px 6px;
+}
+
+.header__description {
+  color: #00ee0a;
+  font-weight: 500;
+  word-spacing: 5px;
+  line-height: 25px;
+}
+
+.list {
+  list-style: none;
+  position: relative;
+}
+
+.list__item {
+  position: relative;
+  line-height: 18px;
+  margin-bottom: 0.5em;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 5px;
+}
+
+.list__item--first {
+  color: #fbc02d;
+  font-weight: 500;
+  text-shadow: 2px 1px 2px;
+}
+
+.list__item--last {
+  color: #4fc3f7;
+  font-weight: 500;
+  text-shadow: 2px 1px 2px;
+}
+
+.checkmark {
+  position: relative;
+  height: 15px;
+  width: 30px;
+  top: 18px;
+}
+
+.checkmark::before {
+  position: absolute;
+  left: -29px;
+  top: -12%;
+  height: 0.85em;
+  width: 3px;
+  background-color: #00ee0a;
+  content: "";
+  transform: translateX(10px) rotate(-45deg);
+  transform-origin: left bottom;
+}
+
+.checkmark::after {
+  position: absolute;
+  left: -28px;
+  bottom: 3px;
+  height: 3px;
+  width: 1.2em;
+  background-color: #00ee0a;
+  content: "";
+  transform: translateX(10px) rotate(-45deg);
+  transform-origin: left bottom;
+}
+
+.section__title {
+  font-size: 1.4rem;
+  font-family: "Space Mono", monospace;
+  color: #fbc02d;
+  margin: 1.5em 0 1em;
+  border-bottom: 5px ridge #00ee0a;
+  padding-bottom: 0.2em;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.article {
+  background-color: #f0ffff1a;
+  border-radius: 2em;
+  box-shadow: 1px 1px 4px 2px;
+}
+
+.article__title {
+  letter-spacing: 2px;
+  word-spacing: -5px;
+  font-family: "Space Mono", monospace;
+  color: #4fc3f7;
+  font-size: 1.3rem;
+  text-align: center;
+  padding-top: 1em;
+}
+
+.article__description {
+  line-height: 1.5rem;
+  padding: 0.6em;
+  text-align: center;
 }
