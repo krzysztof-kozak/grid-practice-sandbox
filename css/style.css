@@ -227,7 +227,7 @@ a.side-note__link:hover {
   display: flex;
 }
 
-ul.games {
+.games {
   width: 100%;
   list-style: square;
   padding-left: 10px;
@@ -268,4 +268,69 @@ p.footer__description {
 .footer__link:hover {
   color: #fbc02d;
   transition: color 1s ease;
+}
+
+@media (min-width: 768px) {
+  .button {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+  }
+
+  .main {
+    margin: 60px 1rem;
+    display: grid;
+    grid-template-columns: 1fr 240px;
+    grid-template-rows: 1fr 2fr 50px;
+    column-gap: 4rem;
+  }
+
+  .header {
+    grid-column: 1;
+  }
+
+  .grid-section-1 {
+    grid-column: 1;
+  }
+
+  .grid-section-2 {
+    grid-column: 2;
+    grid-row: 1 / span 3;
+    border-left: 2px groove;
+  }
+
+  .section__title--media {
+    border-bottom: none;
+  }
+
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .games {
+    width: 75%;
+    padding-left: 0;
+    align-self: flex-end;
+  }
+
+  .games__item {
+    padding: 1.5em 0 0;
+    font-size: 1.3rem;
+  }
+
+  .side-note__description {
+    text-align: center;
+  }
+
+  .side-note__description--padding {
+    text-align: center;
+    border-left: none;
+    line-height: 3em;
+    font-size: 1.45rem;
+  }
 }
