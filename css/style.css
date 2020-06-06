@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background-image: url(/img/sky-background.jpg);
+  background-image: url(https://raw.githubusercontent.com/krzysztof-kozak/grid-practice-sandbox/master/img/sky-background.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
