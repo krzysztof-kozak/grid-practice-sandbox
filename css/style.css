@@ -14,7 +14,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   color: #fafafa;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .button {
@@ -87,7 +87,7 @@ body {
 }
 
 .header__title {
-  font-family: "Space Mono", monospace;
+  font-family: 'Space Mono', monospace;
   font-weight: 700;
   letter-spacing: -2px;
   text-align: center;
@@ -141,7 +141,7 @@ body {
   height: 0.85em;
   width: 3px;
   background-color: #00ee0a;
-  content: "";
+  content: '';
   transform: translateX(10px) rotate(-45deg);
   transform-origin: left bottom;
 }
@@ -153,14 +153,14 @@ body {
   height: 3px;
   width: 1.2em;
   background-color: #00ee0a;
-  content: "";
+  content: '';
   transform: translateX(10px) rotate(-45deg);
   transform-origin: left bottom;
 }
 
 .section__title {
   font-size: 1.4rem;
-  font-family: "Space Mono", monospace;
+  font-family: 'Space Mono', monospace;
   color: #fbc02d;
   margin: 1.5em 0 1em;
   border-bottom: 5px ridge #00ee0a;
@@ -180,7 +180,7 @@ body {
 .article__title {
   letter-spacing: 2px;
   word-spacing: -5px;
-  font-family: "Space Mono", monospace;
+  font-family: 'Space Mono', monospace;
   color: #4fc3f7;
   font-size: 1.3rem;
   text-align: center;
@@ -193,25 +193,25 @@ body {
 }
 
 .side-note__description {
-  font-family: "Cantarell", sans-serif;
+  font-family: 'Cantarell', sans-serif;
   line-height: 1.5em;
   text-align: right;
   color: #ffb600;
 }
 
 .side-note__description--padding {
-  padding-right: 1em;
   text-align: center;
   padding-left: 9px;
   border-left: 3px solid #fff;
   line-height: 2em;
+  font-size: 1.05rem;
 }
 
 a.side-note__link {
-  text-decoration: none;
   font-weight: 600;
   color: #df1111;
   letter-spacing: -1px;
+  text-decoration: none;
 }
 
 a.side-note__link:hover {
@@ -219,15 +219,53 @@ a.side-note__link:hover {
   transition: color 2s ease;
 }
 
+.bigger {
+  font-size: 1.5rem;
+}
+
 .wrapper {
   display: flex;
-  justify-content: space-between;
 }
 
 ul.games {
-  flex-basis: 45%;
+  width: 100%;
+  list-style: square;
+  padding-left: 10px;
+}
+
+.games__item {
+  padding: 0.5em 0 0;
+}
+
+.games__item:hover {
+  color: #ffb600;
+}
+
+.games__link {
+  color: #fafafa;
+}
+
+.games__link:hover {
+  color: #4fc3f7;
 }
 
 aside.side-note {
-  flex-basis: 40%;
+  width: 100%;
+}
+
+p.footer__description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 1em;
+}
+.footer__link:hover {
+  color: #fbc02d;
+  transition: color 1s ease;
 }
