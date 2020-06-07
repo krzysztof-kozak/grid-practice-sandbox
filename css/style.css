@@ -64,7 +64,7 @@ body {
 
 .menu--open {
   display: flex;
-  margin-top: 10px;
+  margin-top: 45px;
 }
 
 .menu__link {
