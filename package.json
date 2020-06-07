@@ -1,0 +1,24 @@
+{
+  "name": "grid-practice-sandbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-sass": "npx node-sass -w sass-test/main.scss sass-test/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krzysztof-kozak/grid-practice-sandbox.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krzysztof-kozak/grid-practice-sandbox/issues"
+  },
+  "homepage": "https://github.com/krzysztof-kozak/grid-practice-sandbox#readme"
+}
