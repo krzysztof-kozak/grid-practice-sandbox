@@ -32,7 +32,6 @@ body {
 .accent-dot {
   font-size: 3rem;
   line-height: 1px;
-  text-shadow: 1px 1px 1px #ff0000;
 }
 
 .button:active {
