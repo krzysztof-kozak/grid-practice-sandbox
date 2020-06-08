@@ -1,3 +1,4 @@
+/*** General settings ***/
 html {
   box-sizing: border-box; }
 
@@ -6,6 +7,7 @@ html {
 *::after {
   box-sizing: inherit; }
 
+/*** Mixins ***/
 body {
   background-image: url(https://raw.githubusercontent.com/krzysztof-kozak/grid-practice-sandbox/master/img/sky-background.jpg);
   background-size: cover;
@@ -13,30 +15,6 @@ body {
   background-attachment: fixed;
   color: #fafafa;
   font-family: 'Roboto', sans-serif; }
-
-.button {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  font-size: 1.3rem;
-  padding: 5px 10px;
-  background: #ceb1b1;
-  color: #000;
-  border: 3px outset #ceb1b1a8;
-  box-shadow: 0px 0px 3px 1px #000; }
-
-.accent-dot {
-  font-size: 3rem;
-  line-height: 1px; }
-
-.button:active {
-  border: 3px inset #ceb1b1a8;
-  box-shadow: none; }
-
-.button:hover {
-  color: #ff0707;
-  transition: color 0.5s ease;
-  cursor: pointer; }
 
 .navigation-bar {
   z-index: 1;
@@ -47,35 +25,50 @@ body {
   width: 100%;
   top: 0;
   box-shadow: 0px 0px 4px 4px #b0989878; }
+  .navigation-bar .button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 1.3rem;
+    padding: 5px 10px;
+    background: #ceb1b1;
+    color: #000;
+    border: 3px outset #ceb1b1a8;
+    box-shadow: 0px 0px 3px 1px #000; }
+    .navigation-bar .button:active {
+      border: 3px inset #ceb1b1a8;
+      box-shadow: none; }
+    .navigation-bar .button:hover {
+      color: #ff0707;
+      transition: color 0.5s ease;
+      cursor: pointer; }
+    .navigation-bar .button .accent-dot {
+      font-size: 3rem;
+      line-height: 1px; }
 
 .menu {
   flex-direction: column;
   justify-content: space-around;
   height: 120px;
   display: none; }
-
-.menu--open {
-  display: flex;
-  margin-top: 45px; }
-
-.menu__link {
-  text-decoration: none;
-  color: #630404;
-  font-size: 1.3rem;
-  font-weight: 700;
-  text-align: center;
-  line-height: 35px; }
-
-.menu__link--accent {
-  color: #00ee0a;
-  text-shadow: 5px 3px 4px #060606; }
-
-.menu__link:hover,
-.menu__link--accent:hover {
-  color: white;
-  background-color: #000;
-  border-radius: 2em;
-  transition: color 2s ease, background-color 2s ease; }
+  .menu__link {
+    text-decoration: none;
+    color: #630404;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 35px; }
+    .menu__link--accent {
+      color: #00ee0a;
+      text-shadow: 5px 3px 4px #060606; }
+    .menu__link:hover {
+      color: white;
+      background-color: #000;
+      border-radius: 2em;
+      transition: color 2s ease, background-color 2s ease; }
+  .menu--open {
+    display: flex;
+    margin-top: 45px; }
 
 .main {
   margin: 60px 1rem; }
