@@ -5,6 +5,7 @@ const init = () => {
   const menu = document.querySelector('.menu-js');
   const toggleMenu = () => menu.classList.toggle('menu--open');
 
+  //If user opens mobile menu and then resizes the screen, close the mobile menu.
   window.addEventListener('resize', () => {
     if (window.innerWidth >= 768 && menu.classList.contains('menu--open')) {
       menu.classList.remove('menu--open');
