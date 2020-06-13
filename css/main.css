@@ -1,26 +1,4 @@
-/*** General settings ***/
-html {
-  box-sizing: border-box; }
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit; }
-
-/*** Mixins ***/
-/*** Page styles ***/
-body {
-  background-image: url(https://raw.githubusercontent.com/krzysztof-kozak/grid-practice-sandbox/master/img/sky-background.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  color: #fafafa;
-  font-family: 'Roboto', sans-serif; }
-
-.content-wrapper {
-  max-width: 1200px;
-  margin: 0 auto; }
-
+/*** Imports ***/
 .navigation-bar {
   z-index: 1;
   min-height: 50px;
@@ -88,27 +66,6 @@ body {
       flex-direction: row;
       align-items: center;
       height: 50px; } }
-
-.main {
-  margin: 60px 1rem; }
-  @media (min-width: 768px) {
-    .main {
-      margin: 60px 1rem;
-      display: grid;
-      grid-template-columns: 1fr 240px;
-      grid-template-rows: 1fr 3fr 50px;
-      column-gap: 4rem; } }
-
-.grid-section-1 {
-  grid-column: 1;
-  margin: 0 auto; }
-
-.grid-section-2 {
-  grid-column: 2;
-  grid-row: 1 / span 2; }
-  @media (min-width: 768px) {
-    .grid-section-2 {
-      border-left: 2px groove; } }
 
 .header__title {
   font-family: 'Space Mono', monospace;
@@ -293,3 +250,46 @@ body {
   .footer__link:hover {
     color: #fbc02d;
     transition: color 1s ease; }
+
+/*** General settings ***/
+html {
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+/*** Page styles ***/
+body {
+  background-image: url(https://raw.githubusercontent.com/krzysztof-kozak/grid-practice-sandbox/master/img/sky-background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fafafa;
+  font-family: 'Roboto', sans-serif; }
+
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.main {
+  margin: 60px 1rem; }
+  @media (min-width: 768px) {
+    .main {
+      margin: 60px 1rem;
+      display: grid;
+      grid-template-columns: 1fr 240px;
+      grid-template-rows: 1fr 3fr 50px;
+      column-gap: 4rem; } }
+
+.grid-section-1 {
+  grid-column: 1;
+  margin: 0 auto; }
+
+.grid-section-2 {
+  grid-column: 2;
+  grid-row: 1 / span 2; }
+  @media (min-width: 768px) {
+    .grid-section-2 {
+      border-left: 2px groove; } }

@@ -15,14 +15,6 @@ html {
   box-sizing: inherit;
 }
 
-/*** Mixins ***/
-@mixin menuLinkHower {
-  color: white;
-  background-color: #000;
-  border-radius: 2em;
-  transition: color 2s ease, background-color 2s ease;
-}
-
 /*** Page styles ***/
 body {
   background-image: url(https://raw.githubusercontent.com/krzysztof-kozak/grid-practice-sandbox/master/img/sky-background.jpg);

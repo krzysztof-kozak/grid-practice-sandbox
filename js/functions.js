@@ -25,4 +25,4 @@ export const closeMenu = debounce(() => {
     menu.classList.remove('menu--open');
     console.log('window resized to >= 768 px, menu closed!');
   }
-}, 500);
+}, 250);
